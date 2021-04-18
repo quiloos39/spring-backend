@@ -14,13 +14,10 @@ public class Mutation implements GraphQLMutationResolver {
     private PlayerService playerService;
 
     public Player addPlayer(String name, String surname, Position position) {
-        if (playerService.findAll().size() < 12) {
-            return playerService.addPlayer(name, surname, position);
-        }
-        return null;
+        return playerService.addPlayer(name, surname, position);
     }
 
-    public String removePlayer(Long id) {
+    public String removePlayer(int id) {
         return playerService.removePlayer(id);
     }
 }

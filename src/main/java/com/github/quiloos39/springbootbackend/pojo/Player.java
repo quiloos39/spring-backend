@@ -10,11 +10,12 @@ public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
-    Long id;
+    int id;
     @Column(name = "name", nullable = false)
     String name;
     @Column(name = "surname", nullable = false)
     String surname;
     @Column(name = "position", nullable = false)
+    @Enumerated(EnumType.STRING)
     Position position;
 }
