@@ -55,22 +55,37 @@
             <artifactId>graphql-java-servlet</artifactId>
             <version>11.1.0</version>
         </dependency>
+        <!-- GraphQL end -->
 
         <!-- Dev dependency -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.graphql-java-kickstart</groupId>
             <artifactId>graphiql-spring-boot-starter</artifactId>
             <version>11.0.0</version>
             <scope>runtime</scope>
         </dependency>
+        <!-- Dev dependency end -->
+
+        <!-- Testing -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
-        <!-- Dev dependency end -->
 
-        <!-- GraphQL end -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.200</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- End on testing -->
 
     </dependencies>
 
