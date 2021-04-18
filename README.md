@@ -15,5 +15,5 @@ I had a lot of fun while making this demo, I had to learn so many things from be
 ### About GraphQL Kick Starter
 You can find more information about it here https://github.com/graphql-java-kickstart/graphql-spring-boot
 
-##Note
+## Note
 I had trouble while writing unit test not because unit test itself but @SpringBootTest gave me a lot of trouble i am not sure how to fix it sorry :'(
